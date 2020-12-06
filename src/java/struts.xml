@@ -1,0 +1,77 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    <!-- Configuration for the default package. -->
+    <package name="default" extends="struts-default">
+        <action name="LoginAction" class="actions.LoginAction">
+            <exception-mapping exception="java.sql.SQLException" result="error"/>
+            <result name="success">search.jsp</result>
+            <result name="error">login.jsp</result>
+        </action>
+        <action name="LogoutAction" class="actions.LogoutAction">
+            <result name="success">login.jsp</result>
+            <result name="error">search.jsp</result>
+        </action>
+        <action name="SearchAction" class="actions.SearchAction">
+            <result name="success">search.jsp</result>
+        </action>
+        <action name="SearchHistoryAction" class="actions.SearchHistoryAction">
+            <result name="success">requestHistoryPage.jsp</result>
+        </action>
+        <action name="SearchRequestAction" class="actions.SearchRequestAction">
+            <result name="success">requestPage.jsp</result>
+        </action>
+        <action name="CancelAction" class="actions.CancelAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">SearchHistoryAction</param>
+                <param name="resource">${resource}</param>
+                <param name="dateBook">${dateBook}</param>
+            </result>
+            <result name="error">requestHistoryPage.jsp</result>
+        </action>
+        <action name="AcceptAction" class="actions.AcceptAction">
+            <result name="reload" type="redirectAction">
+                <param name="actionName">SearchRequestAction</param>
+                <param name="resource">${resource}</param>
+                <param name="user">${user}</param>
+                <param name="dateBookLow">${dateBookLow}</param>
+                <param name="dateBookHigh">${dateBookHigh}</param>
+                <param name="status">${status}</param>
+                <param name="pageString">${pageString}</param>
+            </result>
+        </action>
+        <action name="DenyAction" class="actions.DenyAction">
+            <result name="reload" type="redirectAction">
+                <param name="actionName">SearchRequestAction</param>
+                <param name="resource">${resource}</param>
+                <param name="user">${user}</param>
+                <param name="dateBookLow">${dateBookLow}</param>
+                <param name="dateBookHigh">${dateBookHigh}</param>
+                <param name="status">${status}</param>
+                <param name="pageString">${pageString}</param>
+            </result>
+        </action>
+        <action name="DeleteAction" class="actions.DeleteAction">
+            <result name="reload">bookingPage.jsp</result>
+        </action>
+        <action name="ConfirmAction" class="actions.ConfirmAction">
+            <result name="success" type="redirectAction">
+                <param name="actionName">SearchHistoryAction</param>
+            </result>
+            <result name="error">bookingPage.jsp</result>
+        </action>
+        <action name="BookingAction" class="actions.BookingAction">
+            <result name="unauthorized">login.jsp</result>
+            <result name="reload" type="redirectAction">
+                <param name="actionName">SearchAction</param>
+                <param name="resourceName">${resourceName}</param>
+                <param name="dateStart">${dateStart}</param>
+                <param name="dateEnd">${dateEnd}</param>
+                <param name="categoryString">${categoryString}</param>
+                <param name="pageString">${pageString}</param>
+            </result>
+        </action>
+    </package>
+</struts>

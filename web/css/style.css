@@ -1,0 +1,284 @@
+
+* {
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+a {
+    text-decoration: none;
+    color: #e24e42;
+}
+
+a:hover {
+    color: #651610;
+}
+
+small ,small a {
+    font-size: 11px;
+}
+
+body  {
+    margin:0;
+    padding:0;
+    background: #f4f4f4 url('../img/top-bg.gif') top left repeat-x;
+    font-family: Helvetica;
+    color: #4e6e72;
+}
+header .top .welcome{
+    font-size: 25px;
+    color: #000000;
+    margin-right: 5px;
+    transition: color 0.1s;
+    margin-bottom: -35px
+}
+
+header .top {
+    width: 960px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+
+header .top .logout {
+    float: right;
+    padding-top: 7px;
+}
+
+header .top .logout input[type="submit"] {
+    width: 100px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: #e1e8ed;
+    color: #14171a;
+    border: #000000;
+    margin-left: -80px;
+}
+
+header .top .logout input[type="submit"]:hover {
+    background-color: #657786;
+    color: #cccccc;
+}
+
+header .head {
+    width: 960px;
+    height: 112px;
+    margin: 0 auto;
+    clear: both;
+}
+
+header nav {
+    color: #03789e;
+    width: 960px;
+    height: 40px;
+    margin: 0 auto;
+    clear: both;
+    margin-top: -2px;
+}
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin:0;
+}
+
+header nav ul li .disabled {
+    display: inline-block;
+    color: #000000;
+    padding: 9px 10px;
+    font-size: 14px;
+    height: 40px;
+}
+
+header nav ul li a {
+    display: inline-block;
+    color: #000000;
+    padding: 9px 10px;
+    font-size: 14px;
+    height: 40px;
+    font-weight: bold;
+}
+
+header nav ul li a:hover , header nav ul li a.active {
+    background-color: #03789e;
+    color: #fff!important;
+}
+
+.main {
+    width: 960px;
+    height: auto;
+    margin: 0px 50px 0px 0px;
+}
+
+.user-main {
+    float: left;
+    width: 1400px;
+    height: auto;
+    margin: 50px 10px 50px 100px;
+}
+.search-info{
+    float: left;
+    width: 200px;
+    height: auto;
+    margin-right: 60px;
+}
+.main-info{
+    float: right;
+    width: 900px;
+    height: auto;
+    margin: 50px 180px 0px 0px;
+}
+#label {
+    width: 300px;
+    font-size: 15px;
+    float: right;
+    margin-right: -50px;
+    margin-top: -10px;
+}
+#login-button {
+    font-size: 17px;
+    width: 150px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: -10px;
+    border-radius: 5px;
+}
+#page-switch {
+     font-size: 20px;
+     height: 40px;
+     width: 40px;
+     margin: 0px 5px -10px 0px;
+}
+.info .info-left{
+    float: left;
+    width: 300px;
+    margin-left: -100px;
+}
+.info .info-right{
+    float: right;
+    width: 300px;
+    margin-right: 260px;
+}
+#slot-box {
+     float: left;
+     font-size: 16px;
+     width: 60px;
+     height: 30px;
+     margin: 3px 0px 3px 5px;
+}
+#book-button {
+     float: right;
+     font-size: 16px;
+     width: 70px;
+     height: 30px;
+     margin: 3px 5px 3px 0px;
+}
+#delete-button {
+     float: top;
+     font-size: 17px;
+     width: 70px;
+     height: 40px;
+     margin: 0px 0px -12px 0px;
+}
+#cancel-button {float: top;
+    font-size: 18px;
+    width: 80px;
+    height: 40px;
+    margin: 0px 0px -12px 0px;
+}
+.info .label{
+    width: 110px;
+    margin: 5px;
+}
+.info input[type="password"]{
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 35px;
+}
+#header {
+    font-size: 25px;
+    margin-bottom: 60px;
+    margin-top: -15px;
+    margin-left: 150px;
+}
+#headline-a {
+    font-size: 20px;
+    margin-bottom: -20px;
+    margin-top: 20px;
+}
+#headline-b {
+    margin-bottom: -10px;
+    margin-top: -30px;
+    font-size: 20px;
+}
+#headline-c {
+    font-size: 20px;
+    margin-bottom: 20px;
+    margin-top: -30px;
+}
+.create-left {
+    width: 400px;
+    height: auto;
+    float: left;
+    margin-left: 170px;
+}
+.create-right {
+    width: 400px;
+    height: auto;
+    float: right;
+    margin-right: 310px;
+}
+#confirm-button {
+    float: left;
+    width: 150px;
+    margin: 15px 0px;
+}
+#date-input {
+    float: left;
+    font-size: 18px;
+    width: 200px;
+    height: 35px;
+    border: 1px solid #e0e0e0;
+    padding: 5px;
+    margin: 5px 5px 5px 0px;
+}
+.info input[type="password"]:hover,
+.info input[type="password"]:focus{
+    border: 1px solid #79a3c1;
+}
+.info input[type="text"]{
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    height: 35px;
+}
+
+.info input[type="text"]:hover,
+.info input[type="text"]:focus {
+    border: 1px solid #79a3c1;
+}
+.info input[type="submit"] {
+    border: 1px solid #e0e0e0;
+    background-color: #b7b7b7;
+    color: #fff;
+    padding: 3px 10px;
+    margin: 10px -15px 0px 200px;
+    font-size: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.info input[type="submit"]:hover {
+    background-color: #79a3c1;
+}
+
