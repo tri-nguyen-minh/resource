@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/LAB321_L.P0009">
+<Resource name="DBConnect" auth="Container" type="javax.sql.DataSource"
+              username="sa" password="140329"
+              driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+          url="jdbc:sqlserver://localhost:1433;databaseName=ResourceDB">
+</Resource>
+</Context>
